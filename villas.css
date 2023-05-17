@@ -1,0 +1,150 @@
+/*************toute la page*************/
+body{
+    display: flex;
+    flex-direction: column;
+}
+img, video{
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/*************section villa*************/
+.section_villa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 220px;
+}
+h1{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    font-family: "Gayathri";
+    font-weight: normal;
+    color: #A58C77;
+}
+.instant_t{
+    width: 70vw;
+    height: 500px;
+}
+
+/*************sous l'image central*************/
+.sous_instant_t{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*************partie de gauche*************/
+.plan_3D_terrain{
+    display: flex;
+    flex-direction: column;
+}
+/* carousel */
+.wrapper{
+    max-width: 500px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    color: #724E36;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:first-child{
+    left: 20px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: 20px;
+  }
+  .wrapper .carousel1, .wrapper .carousel2, .wrapper .carousel3, .wrapper .carousel4, .wrapper .carousel5{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+  }
+  .carousel1.dragging, .carousel2.dragging, .carousel3.dragging, .carousel4.dragging, .carousel5.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel1.dragging img, .carousel2.dragging img, .carousel3.dragging img, .carousel4.dragging img, .carousel5.dragging img{
+    pointer-events: none;
+  }
+  .carousel1 img, .carousel2 img, .carousel3 img, .carousel4 img, .carousel5 img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: 100%;
+  }
+  .carousel1 img:first-child, .carousel2 img:first-child, .carousel3 img:first-child, .carousel4 img:first-child, .carousel5 img:first-child{
+    margin-left: 0px;
+  }
+
+
+/*************partie de droite*************/
+.description{
+    width: 500px;
+    min-height: 200px;
+    border-radius: 10px;
+    height: auto;
+    background: #FDFDF9;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+.description_youtube{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    color: #66665F;
+}
+.video_youtube{
+    width: 500px;
+}
+
+/******************************divider******************************/
+.divider_villa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.line {
+  height: 1px;
+  width: 950px;
+  background-color: #724E36;
+  margin-right: 25px;
+}
+.text {
+  color: #724E36;
+  font-size: 25px;
+  text-align: center;
+}
+
+/******************************reseaux sociaux******************************/
+footer{
+  display: flex;
+  justify-content: center;
+}
+footer img{
+  margin: 35px;
+  width: 50px;
+}
+.youtube_link{
+  width: 65px;
+}
+
+
+

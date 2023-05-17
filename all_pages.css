@@ -1,0 +1,106 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html::-webkit-scrollbar{
+    background-color: #DCD3C6;
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #724E36;
+    border-radius: 10px;
+}
+body{
+    /*cursor: none;*/
+    background-color: #DCD3C6;
+}
+p{
+    font-family: "Poppins";
+}
+
+/**************************fonts****************************/
+@font-face {
+    font-family: "Fahkwang";
+    src: url("fonts/Fahkwang-Bold.ttf");
+}
+@font-face {
+    font-family: "ElMessiri";
+    src: url("fonts/ElMessiri-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Gayathri";
+    src: url("fonts/Gayathri-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+/**************************navbar****************************/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 50px 10px 0px 10px;
+}
+.projets, .villas{
+    color: #724E36;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "ElMessiri";
+}
+.accueil{
+    color: #724E36;
+    text-decoration: none;
+    font-size: 42px;
+    font-family: "ElMessiri";
+}
+nav a:hover{
+    color: #A58C77;
+    transition: all 0.25s ease-in-out;
+}
+
+/**************************cursor*************************/
+/*
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+    pointer-events: none;
+}
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: #724E36;
+    border-radius: 50%;
+}
+.expand {
+    background: #724E36;
+    border: 1px solid #724E36;
+}
+
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+}
+*/
+
